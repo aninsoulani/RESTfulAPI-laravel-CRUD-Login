@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 13, 2023 at 03:18 PM
+-- Generation Time: Jul 14, 2023 at 08:25 AM
 -- Server version: 5.7.33
 -- PHP Version: 8.2.8
 
@@ -49,7 +49,7 @@ CREATE TABLE `books` (
 INSERT INTO `books` (`id`, `isbn`, `title`, `subtitle`, `author`, `published`, `publisher`, `pages`, `description`, `website`, `created_at`, `updated_at`) VALUES
 (1, '9781491943533', 'Practical Modern JavaScript', 'Dive into ES6 and the Future of JavaScript', 'Nicolás Bevacqua', '2017-07-16', 'O\'Reilly Media', 334, 'To get the most out of modern JavaScript, you need learn the latest features of its parent specification, ECMAScript 6 (ES6). This book provides a highly practical look at ES6, without getting lost in the specification or its implementation details.', 'https://github.com/mjavascript/practical-modern-javascript', '2023-07-12 04:50:58', '2023-07-12 04:50:58'),
 (4, '1902489201849', 'Buku Testing', 'Tentang mencoba RESTful API', 'Anin Soulani', '2023-07-13', 'Nusantara Media', 21, 'Mencoba mengkoneksikan front-end dengan back-end', 'https://github.com', '2023-07-13 02:49:52', '2023-07-13 02:49:52'),
-(8, '1250391859080', 'Sunrise', 'Matahari Terbit', 'Selenitezz', '2008-09-28', 'Kotak Tisu', 8609, 'Kotak tisu berbentuk segi empat', 'kotaktisu.comm', '2023-07-13 06:21:29', '2023-07-13 06:21:54');
+(8, '1250391859080', 'Sunrisee', 'Matahari Terbit', 'Selenitezz', '2008-09-28', 'Kotak Tisu', 8609, 'Kotak tisu berbentuk segi empat', 'kotaktisu.comm', '2023-07-13 06:21:29', '2023-07-14 00:47:17');
 
 -- --------------------------------------------------------
 
@@ -144,7 +144,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
 (2, 'Mark', 'mark@gmail.com', NULL, '$2y$10$JOeepM2CHlffuntwEy2zNuEze.s1WpcLOZgoSuCRtkdHYU4ANV.fe', NULL, '2023-07-13 00:25:39', '2023-07-13 00:25:39'),
-(3, 'anin soulani', 'aninsoulani@gmail.com', NULL, '$2y$10$3kHM.yPJ0whFEnpdlEcxoOcqaD.6sZTpj04eFT2P3RY3.XVNYg5yO', NULL, '2023-07-13 01:22:53', '2023-07-13 01:22:53');
+(3, 'anin soulani', 'aninsoulani@gmail.com', NULL, '$2y$10$3kHM.yPJ0whFEnpdlEcxoOcqaD.6sZTpj04eFT2P3RY3.XVNYg5yO', NULL, '2023-07-13 01:22:53', '2023-07-13 01:22:53'),
+(4, 'Premi Acc', 'premi.acc10@gmail.com', NULL, '$2y$10$w4M.Nw/yS8GaCEiqjBxekO87cDHgbNrAze.sTNCF8h2WeK9VyOCiy', NULL, '2023-07-14 00:12:14', '2023-07-14 00:12:14');
 
 --
 -- Indexes for dumped tables
@@ -198,7 +199,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `books`
 --
 ALTER TABLE `books`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -222,7 +223,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
